@@ -3,11 +3,18 @@
 
 int main(int argc, char* argv [])
 {
-	int a = 2;
-	int intError;
+	/*
+	// (i)
+	int const notConst = 2;
 
-	a++;
-	intError = 3.2;
+	notConst++;
+	*/
+
+	//(ii)
+	int notInt;
+
+	notInt = 3.2;
+	std::cout << "Do you read a float? \t = " << notInt;
 
 	return 0;
 }
