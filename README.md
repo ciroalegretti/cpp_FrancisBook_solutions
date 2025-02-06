@@ -2,26 +2,26 @@ This repository contains solution for the Exercises of the book "Guide to Scient
 
 ## Contents
 
-ch 1 - Getting Started
+chap1 - Getting Started
 
-ch 2 - Flow of Control
+chap2 - Flow of Control
 
-ch 3 - File Input and Output
+chap3 - File Input and Output
 
-ch 4 - Pointers
+chap4 - Pointers
 
-ch 5 - Blocks, Functions and Reference Variables
+chap5 - Blocks, Functions and Reference Variables
 
-ch 6 - An Introduction to Classes
+chap6 - An Introduction to Classes
 
-ch 7 - Inheritance and Derived Classes
+chap7 - Inheritance and Derived Classes
 
-ch 8 - Templates
+chap8 - Templates
 
-ch 9 - Errors and Exceptions
+chap9 - Errors and Exceptions
 
-ch10 - Developing Classes for Linear Algebra Calculations
+chap10 - Developing Classes for Linear Algebra Calculations
 
-ch11 - An Introduction to Parallel Programming Using MPI
+chap11 - An Introduction to Parallel Programming Using MPI
 
-ch12 - Designing Object-Oriented Numerical Libraries
+chap12 - Designing Object-Oriented Numerical Libraries
