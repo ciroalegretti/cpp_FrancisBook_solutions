@@ -4,27 +4,30 @@
 
 int main(int argc, char* argv[])
 {
-                     
-	double xnew, xold;
+
+	double x_next, x_prev;
 	double res = 1;
+	double tol;
 	double count = 0;
-	
-	xold = 0.0;
-	
-	//for (int i=1; i<100; i++)
-	while (res > 1e-3)
+
+	x_prev = 0.0;
+
+	std::cout << "Enter a tolerance for convergence: \t";
+	std::cin >> tol;
+
+	while (res > tol)
 	{
-		xnew = xold - (exp(xold) + pow(xold,3) - 5)/(exp(xold) + 3*pow(xold,2));
-		
-		res = fabs(xnew - xold);
-		
+		x_next = x_prev - (exp(x_prev) + pow(x_prev,3) - 5)/(exp(x_prev) + 3*pow(x_prev,2));
+
+		res = fabs(x_next - x_prev);
+
 		count++;
 
 		std::cout<< "Iteration count " << count << " with residual: " << res << "\n"; 
-		
-		xold = xnew;
+
+		x_prev = x_next;
 	}
-	
-    
+
    return 0;
+
 }

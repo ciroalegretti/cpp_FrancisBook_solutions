@@ -10,22 +10,32 @@ int main(int argc, char* argv[])
     std::cout << "Enter (-1) in the end to get sum \n";
     std::cout << "Enter (-2) to reset summation \n";
 
-    while ((a != -1) && (sum <= 100))
+//    while ((a != -1) && (sum <= 100))
+    while (sum <= 100)
     {
-    std::cout << "Enter next int \n";
-    std::cin >> a;
-    if (a != -1)
-    {
-        sum += a;
+	std::cout << "Enter next int \n";
+        std::cin >> a;
+
+        if (a == -1)
+        {
+	     break;
+        }
+
+	else if (a == -2)
+        {
+            sum = 0;
+            std::cout << "Sum reset to 0, starting again \n";
+        }
+
+	else
+	{
+	    sum += a;
+	}
+
     }
-    if (a == -2)
-    {
-    sum = 0;
-    std::cout << "Sum reset to 0, starting again \n";
-    }
-    }
-    
+
     std::cout << "Sum = " << sum << "\n";
-    
+
     return 0;
+
 }

@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
     }
 
     // Item 2
-    if ((y - q > 1e-8) && (j = 20))
+    if ((y - q > 1e-8) && (j == 20))
     {
 	x = 5.0;
 	condNumb = 2;
