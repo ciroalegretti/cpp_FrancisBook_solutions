@@ -16,14 +16,10 @@ int main(int argc, char* argv[])
         double dummy1, dummy2, dummy3, dummy4;
         read_file >> dummy1 >> dummy2 >> dummy3 >> dummy4;
 
-        if (!read_file.fail());
+        if (!read_file.fail())
 	{
             number_of_rows++;
 	}
-
-//        std::cout << "Dummy4 = " << dummy4 << "\n";
-//        std::cout << "Number of rows = " << number_of_rows << "\n";
-
     }
 
     std::cout << "Number of rows = " << number_of_rows << "\n";
