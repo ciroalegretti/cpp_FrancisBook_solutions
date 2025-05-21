@@ -10,17 +10,24 @@ int main(int argc, char* argv[])
     int* p_i;
     int* p_j;
 
-    // store adresses
-    p_i = &i;
-    p_j = &j;
+    // store dynamic adresses
+    p_i = new int;
+    p_j = new int;
 
-    // de-reference and overwrite values
-    *p_i = 5;
-    *p_j = 1;
+    // de-reference and attribute values
+    *p_i = i;
+    *p_j = j;
+
+    // swap values
+    i = *p_j;
+    j = *p_i;
 
     // check operation
-    std::cout << "Initialized as '1', now i = " << *p_i << "\n";
-    std::cout << "Initialized as '5', now j = " << *p_j << "\n";
+    std::cout << "Initialized as '1', now i = " << i << "\n";
+    std::cout << "Initialized as '5', now j = " << j << "\n";
+
+    // free memory
+    delete p_i, p_j;
 
     return 0;
 }

@@ -3,6 +3,7 @@
 int main(int argc, char* argv[])
 {
     int i = 5;	// integer declaration
+
     int* p_j;	// pointer to int declar.
 
     p_j = &i;	// store the add. to i in the pointer
@@ -13,7 +14,7 @@ int main(int argc, char* argv[])
 
     int* p_k;	// pointer to an int declaration
 
-    // allocate memory and store value to p_k
+    // allocate dynamic memory and store value to p_k
     p_k = new int;
     *p_k = i;
 
