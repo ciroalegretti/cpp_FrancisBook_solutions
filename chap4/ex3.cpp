@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 
 int main(int argc, char* argv[])
 {
@@ -12,6 +13,7 @@ int main(int argc, char* argv[])
         // dyn. mem. alloc. for pointers (array's first element)
         vec1 = new double [3];
         vec2 = new double [3];
+        assert(vec1 != NULL && vec2 != NULL);
 
         // assigning arbitrary values
         for (int i=0; i<3; i++)

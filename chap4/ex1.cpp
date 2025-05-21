@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 
 int main(int argc, char* argv[])
 {
@@ -16,6 +17,8 @@ int main(int argc, char* argv[])
 
     // allocate dynamic memory and store value to p_k
     p_k = new int;
+    assert(p_k != NULL);
+    
     *p_k = i;
 
     *p_j = 0;	// change value pointed to by p_y to zero

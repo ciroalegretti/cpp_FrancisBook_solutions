@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 
 int main(int argc, char* argv[])
 {
@@ -13,6 +14,7 @@ int main(int argc, char* argv[])
     // store dynamic adresses
     p_i = new int;
     p_j = new int;
+    assert(p_i != NULL && p_j != NULL);
 
     // de-reference and attribute values
     *p_i = i;
